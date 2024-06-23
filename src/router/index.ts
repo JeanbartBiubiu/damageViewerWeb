@@ -17,6 +17,16 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     }
+    ,
+    {
+      path: '{gameCode}/index',
+      name: 'index',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      // todo 换成通用的首页
+      component: () => import('../views/AboutView.vue')
+    }
   ]
 })
 
